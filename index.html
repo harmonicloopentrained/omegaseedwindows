@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OmegaSeed · Recursive Median FAC</title>
+  <meta name="description" content="OmegaSeed: GitHub Pages compatible continuous nested topography field with atlas learning, cinematic camera tools, and boundary-slice gauge transitions.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="field-canvas" aria-label="OmegaSeed continuous field visualizer"></canvas>
+
+  <header class="hud title-card">
+    <div class="eyebrow">continuous effective field engine</div>
+    <h1>OMEGASEED</h1>
+    <p>Recursive Median FAC / Gauge Atlas: toroidal chart-wrap topology, stabilized horizon nursery, pause-safe budgets, and a semantic FAC that searches medians between and within medians before proposing one macro-action.</p>
+  </header>
+
+  <section class="hud control-card" aria-label="controls">
+    <div class="button-row">
+      <button id="run-toggle">Pause</button>
+      <button id="learn-now">Learn step</button>
+      <button id="auto-learn">Auto learn: on</button>
+      <button id="auto-evolve">Omega auto: on</button>
+      <button id="cycle-mode">Mode: render 80 / learn 20</button>
+      <button id="emit-packet">Emit packet</button>
+    </div>
+    <div class="button-row secondary">
+      <button id="export-save">Export save</button>
+      <button id="import-save">Import save</button>
+      <button id="reset-field">New seed</button>
+      <button id="clear-atlas">Clear atlas</button>
+      <button id="cinematic-pan">Cinematic pan</button>
+      <button id="boundary-punch">Boundary punch</button>
+      <button id="boundary-return">Boundary return (top)</button>
+      <button id="bugeye-survey">Bugeye survey</button>
+      <button id="dimensional-dig">Dimensional dig</button>
+      <button id="filament-climb">Filament climb</button>
+      <button id="layer-return">Layer return</button>
+      <button id="overlay-toggle">Structure overlay: on</button>
+      <button id="help-toggle">Notes</button>
+      <input id="save-file" type="file" accept="application/json,.json" hidden>
+    </div>
+
+    <label class="seed-line">Seed
+      <input id="seed-input" type="text" spellcheck="false">
+    </label>
+
+    <div class="sliders">
+      <label>Scale <span data-value-for="scale"></span><input id="scale" type="range" min="0.60" max="4.20" step="0.01"></label>
+      <label>Flow <span data-value-for="flow"></span><input id="flow" type="range" min="0.05" max="3.50" step="0.01"></label>
+      <label>Fold depth <span data-value-for="foldDepth"></span><input id="foldDepth" type="range" min="1" max="9" step="1"></label>
+      <label>Warp <span data-value-for="warpStrength"></span><input id="warpStrength" type="range" min="0.00" max="1.40" step="0.01"></label>
+      <label>Threshold <span data-value-for="threshold"></span><input id="threshold" type="range" min="0.25" max="0.85" step="0.01"></label>
+      <label>Soft edge <span data-value-for="edgeSoftness"></span><input id="edgeSoftness" type="range" min="0.04" max="0.72" step="0.01"></label>
+      <label>Filament mix <span data-value-for="filamentMix"></span><input id="filamentMix" type="range" min="0.00" max="1.00" step="0.01"></label>
+      <label>Gravity <span data-value-for="gravity"></span><input id="gravity" type="range" min="0.00" max="2.00" step="0.01"></label>
+      <label>Swirl <span data-value-for="swirl"></span><input id="swirl" type="range" min="0.00" max="1.80" step="0.01"></label>
+      <label>Atlas fold <span data-value-for="atlasInfluence"></span><input id="atlasInfluence" type="range" min="0.00" max="1.00" step="0.01"></label>
+      <label>Particles <span data-value-for="particleCount"></span><input id="particleCount" type="range" min="500" max="9000" step="100"></label>
+      <label>Quality <span data-value-for="renderQuality"></span><input id="renderQuality" type="range" min="0.45" max="3.00" step="0.05"></label>
+      <label>Observer slow <span data-value-for="timeScale"></span><input id="timeScale" type="range" min="0.02" max="1.00" step="0.01"></label>
+      <label>Horizon exit <span data-value-for="horizonExitThreshold"></span><input id="horizonExitThreshold" type="range" min="0.30" max="1.15" step="0.01"></label>
+      <label>Superbasin follow <span data-value-for="superbasinFollowStrength"></span><input id="superbasinFollowStrength" type="range" min="0.00" max="1.00" step="0.01"></label>
+      <label>Learn duty <span data-value-for="learnDuty"></span><input id="learnDuty" type="range" min="0.20" max="0.80" step="0.01"></label>
+      <label>Dig bias <span data-value-for="dimensionalDigBias"></span><input id="dimensionalDigBias" type="range" min="0.00" max="1.00" step="0.01"></label>
+      <label>Filament climb <span data-value-for="filamentClimbThreshold"></span><input id="filamentClimbThreshold" type="range" min="0.20" max="0.98" step="0.01"></label>
+      <label>Portal diversity <span data-value-for="portalDiversity"></span><input id="portalDiversity" type="range" min="0.00" max="1.00" step="0.01"></label>
+      <label>Portal source quota <span data-value-for="portalUniqueSourceQuota"></span><input id="portalUniqueSourceQuota" type="range" min="4" max="64" step="1"></label>
+      <label>Auto dig cooldown <span data-value-for="autoMiningCooldownCycles"></span><input id="autoMiningCooldownCycles" type="range" min="180" max="6000" step="20"></label>
+      <label>Auto dig stay <span data-value-for="autoMiningStayCycles"></span><input id="autoMiningStayCycles" type="range" min="120" max="3000" step="20"></label>
+      <label>Layer survey delay <span data-value-for="autoMiningBugeyeDelayCycles"></span><input id="autoMiningBugeyeDelayCycles" type="range" min="12" max="900" step="6"></label>
+      <label>Filament urge <span data-value-for="autoMiningFilamentChance"></span><input id="autoMiningFilamentChance" type="range" min="0.00" max="1.00" step="0.01"></label>
+      <label>Post-Bugeye climb window <span data-value-for="autoMiningPostBugeyeClimbWindowCycles"></span><input id="autoMiningPostBugeyeClimbWindowCycles" type="range" min="120" max="2400" step="20"></label>
+      <label>Post-Bugeye climb relax <span data-value-for="autoMiningPostBugeyeClimbRelax"></span><input id="autoMiningPostBugeyeClimbRelax" type="range" min="0.00" max="0.50" step="0.01"></label>
+      <label>Bugeye dwell <span data-value-for="bugeyeDwellMultiplier"></span><input id="bugeyeDwellMultiplier" type="range" min="0.00" max="2.00" step="0.05"></label>
+      <label>LW LR lift <span data-value-for="livingWordLearningLift"></span><input id="livingWordLearningLift" type="range" min="0.0001" max="0.0200" step="0.0001"></label>
+      <label>Horizon threshold <span data-value-for="horizonThreshold"></span><input id="horizonThreshold" type="range" min="0.45" max="1.20" step="0.01"></label>
+      <label>Shell atlas weight <span data-value-for="horizonShellAtlasWeight"></span><input id="horizonShellAtlasWeight" type="range" min="0.00" max="0.35" step="0.01"></label>
+      <label>White release <span data-value-for="horizonReleaseThreshold"></span><input id="horizonReleaseThreshold" type="range" min="0.35" max="1.25" step="0.01"></label>
+      <label>Horizon seedlet coupling <span data-value-for="horizonSeedletCoupling"></span><input id="horizonSeedletCoupling" type="range" min="0.00" max="0.80" step="0.01"></label>
+      <label>Nursery gate threshold <span data-value-for="horizonNurseryGateThreshold"></span><input id="horizonNurseryGateThreshold" type="range" min="0.45" max="1.20" step="0.01"></label>
+      <label>Nursery capture limit <span data-value-for="horizonNurseryGateLimit"></span><input id="horizonNurseryGateLimit" type="range" min="1" max="16" step="1"></label>
+      <label>Nursery min score <span data-value-for="horizonNurseryGateMinScore"></span><input id="horizonNurseryGateMinScore" type="range" min="0.10" max="8.00" step="0.05"></label>
+      <label>Proto attraction center <span data-value-for="protoAttractionCenter"></span><input id="protoAttractionCenter" type="range" min="0.20" max="0.80" step="0.01"></label>
+      <label>Proto tune rate <span data-value-for="protoAttractionLearningRate"></span><input id="protoAttractionLearningRate" type="range" min="0.000" max="0.080" step="0.001"></label>
+      <label>Rim approach <span data-value-for="horizonRimApproachThreshold"></span><input id="horizonRimApproachThreshold" type="range" min="0.35" max="1.10" step="0.01"></label>
+      <label>Rim scar weight <span data-value-for="horizonRimScarWeight"></span><input id="horizonRimScarWeight" type="range" min="0.00" max="0.80" step="0.01"></label>
+      <label>Horizon candidate <span data-value-for="horizonCandidateThreshold"></span><input id="horizonCandidateThreshold" type="range" min="0.35" max="1.20" step="0.01"></label>
+      <label>Superbasin split <span data-value-for="superbasinSplitThreshold"></span><input id="superbasinSplitThreshold" type="range" min="0.45" max="1.40" step="0.01"></label>
+      <label>Diversity floor <span data-value-for="superbasinDiversityFloor"></span><input id="superbasinDiversityFloor" type="range" min="0.00" max="0.65" step="0.01"></label>
+      <label>Dominant hit cap <span data-value-for="dominantBasinMaxHitShare"></span><input id="dominantBasinMaxHitShare" type="range" min="0.20" max="0.98" step="0.01"></label>
+      <label>Horizon soft cap <span data-value-for="horizonBoundSoftCap"></span><input id="horizonBoundSoftCap" type="range" min="4" max="192" step="1"></label>
+      <label>Horizon hard cap <span data-value-for="horizonBoundHardCap"></span><input id="horizonBoundHardCap" type="range" min="4" max="192" step="1"></label>
+      <label>Parole compactness <span data-value-for="horizonParoleCompactness"></span><input id="horizonParoleCompactness" type="range" min="0.30" max="1.20" step="0.01"></label>
+      <label>Freeze exit compactness <span data-value-for="horizonFreezeExitCompactness"></span><input id="horizonFreezeExitCompactness" type="range" min="0.30" max="1.20" step="0.01"></label>
+      <label>Release drain limit <span data-value-for="horizonReleaseDrainLimit"></span><input id="horizonReleaseDrainLimit" type="range" min="1" max="64" step="1"></label>
+      <label>Pause budget cap <span data-value-for="effectiveBudgetHardCap"></span><input id="effectiveBudgetHardCap" type="range" min="1" max="32" step="1"></label>
+      <label>Pause nursery cap <span data-value-for="effectiveNurseryBudgetHardCap"></span><input id="effectiveNurseryBudgetHardCap" type="range" min="1" max="32" step="1"></label>
+      <label>FAC tree depth <span data-value-for="facMedianTreeDepth"></span><input id="facMedianTreeDepth" type="range" min="1" max="16" step="1"></label>
+      <label>FAC score threshold <span data-value-for="facMedianScoreThreshold"></span><input id="facMedianScoreThreshold" type="range" min="0.001" max="0.200" step="0.001"></label>
+      <label>FAC action limit <span data-value-for="facMedianActionLimit"></span><input id="facMedianActionLimit" type="range" min="1" max="4" step="1"></label>
+      <label>FAC update interval <span data-value-for="facMedianUpdateIntervalCycles"></span><input id="facMedianUpdateIntervalCycles" type="range" min="1" max="600" step="1"></label>
+      <label>FAC confidence floor <span data-value-for="facMedianMinConfidence"></span><input id="facMedianMinConfidence" type="range" min="0.00" max="1.00" step="0.01"></label>
+    </div>
+  </section>
+
+  <aside class="hud metric-card" aria-label="metrics">
+    <div class="metric"><span>Epoch</span><strong id="metric-epoch">0</strong></div>
+    <div class="metric"><span>Cycle</span><strong id="metric-cycle">0</strong></div>
+    <div class="metric"><span>Time</span><strong id="metric-time">0.00</strong></div>
+    <div class="metric"><span>Anchors</span><strong id="metric-anchors">0</strong></div>
+    <div class="metric"><span>Packets</span><strong id="metric-packets">0</strong></div>
+    <div class="metric"><span>Seedlets</span><strong id="metric-seedlets">0</strong></div>
+    <div class="metric"><span>Gauge active</span><strong id="metric-gauge-active">none</strong></div>
+    <div class="metric"><span>Gauge states</span><strong id="metric-gauge-states">—</strong></div>
+    <div class="metric"><span>Res/Dilation</span><strong id="metric-gauge-rd">0/1</strong></div>
+    <div class="metric"><span>Temp/LR</span><strong id="metric-anneal">0/0</strong></div>
+    <div class="metric"><span>Boredom</span><strong id="metric-boredom">—</strong></div>
+    <div class="metric"><span>Coherence</span><strong id="metric-coherence">0.000</strong></div>
+    <div class="metric"><span>Filament</span><strong id="metric-filament">0.000</strong></div>
+    <div class="metric"><span>Cavity</span><strong id="metric-cavity">0.000</strong></div>
+    <div class="metric"><span>Atlas fitness</span><strong id="metric-fitness">0.000</strong></div>
+    <div class="metric"><span>Mode</span><strong id="metric-mode">80/20</strong></div>
+    <div class="metric"><span>Memory</span><strong id="metric-memory">0p</strong></div>
+    <div class="metric"><span>Frames/Learns</span><strong id="metric-budget">0/0</strong></div>
+    <div class="metric"><span>Learn budget</span><strong id="metric-learn-budget">—</strong></div>
+    <div class="metric"><span>Pause clamp</span><strong id="metric-pause-clamp">—</strong></div>
+    <div class="metric"><span>Render</span><strong id="metric-render">0.0ms</strong></div>
+    <div class="metric"><span>Quality</span><strong id="metric-quality">1.00x</strong></div>
+    <div class="metric"><span>Camera</span><strong id="metric-camera">1.00x</strong></div>
+    <div class="metric"><span>Slice</span><strong id="metric-slice">parent</strong></div>
+    <div class="metric"><span>Layer</span><strong id="metric-layer">1/3</strong></div>
+    <div class="metric"><span>Bugeye</span><strong id="metric-bugeye">0/3 stale</strong></div>
+    <div class="metric"><span>LivingWord</span><strong id="metric-livingword">0.00 / 0</strong></div>
+    <div class="metric"><span>Horizon</span><strong id="metric-horizon">0.00 C 1.00 out</strong></div>
+    <div class="metric"><span>Proto attraction</span><strong id="metric-proto-attraction">0.50</strong></div>
+    <div class="metric"><span>Superbasin rim</span><strong id="metric-superbasin">0 rim / 0 cand</strong></div>
+    <div class="metric"><span>FAC median</span><strong id="metric-fac-median">0.000 · 0 med</strong></div>
+    <div class="metric"><span>FAC action</span><strong id="metric-fac-action">none</strong></div>
+    <div class="metric"><span>Driver</span><strong id="metric-driver">seek</strong></div>
+    <div class="metric"><span>Split/Portals</span><strong id="metric-split">0/0</strong></div>
+    <div class="metric"><span>Critical</span><strong id="metric-critical">0k 0f 0.00</strong></div>
+    <p id="atlas-readout">No learned anchors yet.</p>
+  </aside>
+
+  <aside class="hud help-card">
+    <h2>Build disposition</h2>
+    <p><strong>No individual phase-commits create structures.</strong> The visible filaments are continuous scalar-field contours: nested simplex noise, domain warping, and smoothstep thresholds.</p>
+    <p>The atlas learns high-value basins and ridges from the field and feeds them back as weak topographic priors. That makes save carry-over useful without turning the system into a hand-authored tile engine.</p>
+    <p>Export save to carry learned anchors into another browser/session. Emit packet to export a compact LivingWord-style seed packet. The v0.4.22 pass adds Recursive Median FAC suggestion mode: epoch 0 / cycle 0 is treated as origin median M0, integers and rational ratios address candidate medians, and FAC proposes one bounded semantic action such as seek_median, dig_down, tighten_shell, promote_seedlets, wrap_edge, or scar_and_stabilize.</p>
+    <p class="keys">Keys: Space run/pause · mouse drag pan · wheel zoom · M cycle preset · L learn · S save · O zoom-in · P zoom-out · C pan · B boundary punch · R top return · Y bugeye · G dimensional dig · V filament climb · U layer return · T overlay · H hide UI · F fullscreen · D driver · N nested · Shift+P packet</p>
+  </aside>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="src/omegaseed-core.js"></script>
+  <script src="src/omegaseed-memory.js"></script>
+  <script src="src/omegaseed-seedlet.js"></script>
+  <script src="src/omegaseed-driver.js"></script>
+  <script src="src/omegaseed-app.js"></script>
+</body>
+</html>

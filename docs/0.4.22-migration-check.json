@@ -1,0 +1,67 @@
+{
+  "version": "omegaseed-0.4.22-recursive-median-fac",
+  "sourceVersion": "omegaseed-0.4.21c-pause-budget-clamp",
+  "epoch": 351084,
+  "fac": {
+    "origin": {
+      "id": "M0",
+      "epoch": 0,
+      "cycle": 0,
+      "address": "M0",
+      "ratio": "1/2",
+      "depth": 0,
+      "meaning": "first admissible balance between asymptotic float and forbidden null"
+    },
+    "lastScore": 0.7814407038222966,
+    "medians": 2,
+    "action": {
+      "id": "fac-ito0t0",
+      "action": "scar_and_stabilize",
+      "actionId": "scar_and_stabilize",
+      "confidence": 0.9679669268553646,
+      "targetMedian": "M0/5/8/5/8",
+      "ratio": "5/8",
+      "mode": "suggestion",
+      "params": {
+        "strength": 0.16,
+        "durationCycles": 508,
+        "medianScore": 0.78144,
+        "ratioValue": 0.625
+      },
+      "stopCondition": "medianScore improves by 0.040 or cavity/overcapture leaves safe band",
+      "reason": "rim/scar memory is the current median boundary",
+      "cycle": 195187,
+      "epoch": 351084
+    }
+  },
+  "packetFAC": {
+    "score": 0.78144,
+    "medians": 2,
+    "mode": "suggestion",
+    "action": "scar_and_stabilize",
+    "targetMedian": "M0/5/8/5/8",
+    "confidence": 0.96797,
+    "ratio": "5/8"
+  },
+  "stats": {
+    "coherence": 0.5774536153626524,
+    "filament": 0.420876004133167,
+    "cavity": 0.010354008599228722,
+    "atlasFitness": 5.978657962520614,
+    "anchors": 7,
+    "packets": 18,
+    "lastLearned": "2026-05-09T07:31:34.419Z",
+    "seedlets": 192,
+    "lastBirths": 0,
+    "lastUpdates": 1,
+    "seedletStatuses": {
+      "training": 79,
+      "resonant": 82,
+      "stagnant": 30,
+      "hibernating": 1
+    },
+    "facMedianScore": 0.7814407038222966,
+    "facMedianAction": "scar_and_stabilize",
+    "facMedianAddress": "M0/5/8/5/8"
+  }
+}

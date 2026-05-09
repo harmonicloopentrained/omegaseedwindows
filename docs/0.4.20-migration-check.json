@@ -1,0 +1,36 @@
+{
+  "version": "omegaseed-0.4.20-horizon-nursery-gate",
+  "migratedParams": {
+    "superbasinFollowStrength": 0.42,
+    "horizonSeedletCoupling": 0.24,
+    "horizonCandidateThreshold": 0.62,
+    "horizonNurseryGateThreshold": 0.7,
+    "horizonNurseryGateLimit": 3,
+    "horizonNurseryGateMinScore": 1.2
+  },
+  "horizon": {
+    "mode": "horizon-freeze",
+    "insideHorizon": true,
+    "chartWraps": 61,
+    "shells": 24,
+    "priorBoundSeedlets": 0,
+    "preservedHorizonMetadata": 188
+  },
+  "stats": {
+    "coherence": 0.2258016146621576,
+    "filament": 0.48209325011502535,
+    "cavity": 0.06611749547120083,
+    "atlasFitness": 1.2718894188350045,
+    "anchors": 128,
+    "packets": 12,
+    "lastLearned": "2026-05-09T05:34:57.181Z",
+    "seedlets": 192,
+    "lastBirths": 0,
+    "lastUpdates": 0,
+    "seedletStatuses": {
+      "training": 74,
+      "resonant": 94,
+      "stagnant": 24
+    }
+  }
+}

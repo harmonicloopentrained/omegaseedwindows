@@ -1,0 +1,55 @@
+{
+  "name": "omegaseed",
+  "version": "0.4.22",
+  "private": true,
+  "description": "OmegaSeed 0.4.22 Recursive Median FAC build with toroidal chart wrapping, horizon occupancy governor, pause budget clamp, and semantic FAC median-tree suggestion mode.",
+  "scripts": {
+    "serve": "node tools/serve.js",
+    "train:render80": "node tools/train-node.js --mode render80 --cycles 500 --ram-mb 2048 --input saves/omegaseed_save_epoch_305921.json",
+    "train:learn80": "node tools/train-node.js --mode learn80 --cycles 500 --ram-mb 2048 --input saves/omegaseed_save_epoch_305921.json",
+    "test": "node --check src/omegaseed-core.js && node --check src/omegaseed-memory.js && node --check src/omegaseed-seedlet.js && node --check src/omegaseed-driver.js && node --check src/omegaseed-app.js && node tests/smoke-test.js",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist:win": "electron-builder --win portable --x64 --publish never",
+    "dist": "electron-builder --publish never"
+  },
+  "productName": "OmegaSeed",
+  "main": "electron/main.cjs",
+  "author": "OmegaSeed",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^42.0.1",
+    "electron-builder": "^26.8.1"
+  },
+  "build": {
+    "appId": "dev.omegaseed.viewer",
+    "productName": "OmegaSeed",
+    "asar": true,
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "index.html",
+      "styles.css",
+      "src/**/*",
+      "saves/bootstrap_save.json",
+      "saves/omegaseed_save_epoch_72784.json",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "${productName}-${version}-windows-${arch}.${ext}"
+    },
+    "portable": {
+      "artifactName": "${productName}-${version}-windows-${arch}.${ext}"
+    }
+  }
+}

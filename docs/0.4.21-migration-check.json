@@ -1,0 +1,39 @@
+{
+  "version": "omegaseed-0.4.21-horizon-nursery-stabilizer",
+  "migratedParams": {
+    "superbasinFollowStrength": 0.39,
+    "horizonNurseryGateThreshold": 0.715,
+    "horizonNurseryGateLimit": 2,
+    "horizonReleaseThreshold": 0.82,
+    "superbasinDiversityFloor": 0.18,
+    "dominantBasinMaxHitShare": 0.72,
+    "horizonBoundStatusAccounting": true,
+    "horizonCandidateTelemetryFix": true
+  },
+  "saveStatuses": {
+    "training": 102,
+    "resonant": 45,
+    "stagnant": 38,
+    "hibernating": 1,
+    "horizon-bound": 6
+  },
+  "packetStatuses": {
+    "training": 102,
+    "resonant": 45,
+    "stagnant": 38,
+    "hibernating": 1,
+    "horizon-bound": 6
+  },
+  "horizonBoundSeedlets": 6,
+  "superbasin": {
+    "dominantAnchorId": "anchor-81lttx",
+    "protoAttraction": 0.37979,
+    "topHitShare": 0.90149,
+    "overlock": 0,
+    "diversityPressure": 0,
+    "rimScars": 12,
+    "horizonCandidates": 0,
+    "splits": 0,
+    "mode": "baby-curriculum"
+  }
+}

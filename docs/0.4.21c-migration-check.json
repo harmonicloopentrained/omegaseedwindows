@@ -1,0 +1,18 @@
+{
+  "version": "omegaseed-0.4.21c-pause-budget-clamp",
+  "pauseFreezesBudgets": true,
+  "pauseFreezesAutotune": true,
+  "pauseFreezesBugeyeRoutines": true,
+  "pauseFreezesMiningRoutines": true,
+  "freezeAnnealingChildBudgetOnPause": true,
+  "effectiveBudgetHardCap": 3,
+  "effectiveNurseryBudgetHardCap": 8,
+  "seedTrainingBudget": 3,
+  "seedletNurseryBudgetBoost": 8,
+  "statuses": {
+    "training": 79,
+    "resonant": 82,
+    "stagnant": 30,
+    "hibernating": 1
+  }
+}

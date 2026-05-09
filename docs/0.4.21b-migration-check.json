@@ -1,0 +1,26 @@
+{
+  "version": "omegaseed-0.4.21b-horizon-occupancy-governor",
+  "sourceVersion": "omegaseed-0.4.21-horizon-nursery-stabilizer",
+  "params": {
+    "horizonBoundMaxFraction": 0.28,
+    "horizonBoundSoftCap": 48,
+    "horizonBoundHardCap": 64,
+    "horizonCaptureCooldownCycles": 360,
+    "horizonParoleCompactness": 0.69,
+    "horizonFreezeExitCompactness": 0.69,
+    "horizonReleaseThreshold": 0.79,
+    "annealingReheatOnOvercapture": true
+  },
+  "before": {
+    "horizonBound": 189
+  },
+  "after": {
+    "statuses": {
+      "horizon-bound": 64,
+      "training": 63,
+      "resonant": 64,
+      "stagnant": 1
+    },
+    "paroled": 125
+  }
+}

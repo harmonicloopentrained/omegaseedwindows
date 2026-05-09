@@ -1,0 +1,1704 @@
+{
+  "type": "omegaseed.livingword.packet",
+  "version": "omegaseed-0.4.2-seedlet-sovereignty",
+  "id": "packet-12ojopn",
+  "parent": "omegaseed-mf9ba8",
+  "seed": "omegaseed-bootstrap",
+  "epoch": 48432,
+  "time": 1952.707477,
+  "created": "2026-05-08T10:24:06.591Z",
+  "stats": {
+    "coherence": 0.21590928337702617,
+    "filament": 0.47443385786478803,
+    "cavity": 0.15111357678486934,
+    "atlasFitness": 1.821692225623806,
+    "anchors": 128,
+    "packets": 1,
+    "lastLearned": "2026-05-08T10:24:02.270Z",
+    "seedlets": 192,
+    "lastBirths": 0,
+    "lastUpdates": 0,
+    "seedletStatuses": {
+      "training": 91,
+      "resonant": 1,
+      "stagnant": 17,
+      "stable": 65,
+      "dormant": 18
+    }
+  },
+  "params": {
+    "scale": 0.6,
+    "flow": 1.86155,
+    "foldDepth": 9,
+    "warpStrength": 0.22028,
+    "threshold": 0.42342,
+    "edgeSoftness": 0.48888,
+    "filamentMix": 0.93213,
+    "gravity": 0.52026,
+    "swirl": 1.8,
+    "viscosity": 0.89,
+    "atlasInfluence": 0.72,
+    "atlasRadius": 0.2,
+    "particleCount": 9000,
+    "fieldWidth": 188,
+    "fieldHeight": 112,
+    "exposure": 1,
+    "learningRate": 0.22,
+    "maxAnchors": 128,
+    "maxAtlasInfluence": 48,
+    "minAnchorScore": 0.66,
+    "schedulerMode": "render80",
+    "memoryMaxPages": 256,
+    "pageSize": 96,
+    "driverEnabled": true,
+    "driverAutotune": true,
+    "splitDepthMax": 8,
+    "minPortalScore": 1.72,
+    "maxPortals": 96,
+    "nestedEnabled": true,
+    "nestedAutoproject": true,
+    "maxSeedlets": 192,
+    "activeSeedlets": 32,
+    "seedletPacketLimit": 64,
+    "gaugeReserveSeedlets": 0.4,
+    "atlasBasinReserve": 0.4,
+    "atlasKeyholeReserve": 0.3,
+    "atlasFilamentReserve": 0.2,
+    "atlasOtherReserve": 0.1,
+    "stagnantAfterHits": 48,
+    "reproductiveScore": 1.62,
+    "maxSeedDepth": 14,
+    "seedProjectionThreshold": 0.82,
+    "seedTrainingBudget": 3,
+    "nestedTimeDilation": true,
+    "boundaryBleed": true,
+    "phaseMatchWeight": 0.38,
+    "maxTimeDilation": 64
+  },
+  "anchors": [
+    {
+      "x": -0.24745,
+      "y": -0.15915,
+      "r": 0.21226,
+      "s": 0.87189,
+      "q": 0.85861,
+      "k": "keyhole",
+      "h": 272,
+      "c": 0.98674
+    },
+    {
+      "x": -0.12777,
+      "y": -0.23752,
+      "r": 0.21297,
+      "s": 0.81686,
+      "q": 0.84285,
+      "k": "keyhole",
+      "h": 245,
+      "c": 0.98317
+    },
+    {
+      "x": -0.37752,
+      "y": -0.91835,
+      "r": 0.21966,
+      "s": 0.83284,
+      "q": 0.85262,
+      "k": "keyhole",
+      "h": 184,
+      "c": 0.99705
+    },
+    {
+      "x": -0.37109,
+      "y": -0.05691,
+      "r": 0.21186,
+      "s": 0.85563,
+      "q": 0.82526,
+      "k": "keyhole",
+      "h": 121,
+      "c": 0.85343
+    },
+    {
+      "x": 0.50053,
+      "y": -0.11074,
+      "r": 0.21311,
+      "s": 0.77402,
+      "q": 0.81702,
+      "k": "keyhole",
+      "h": 178,
+      "c": 0.92826
+    },
+    {
+      "x": 0.66748,
+      "y": 0.90155,
+      "r": 0.21504,
+      "s": 0.89174,
+      "q": 0.87599,
+      "k": "keyhole",
+      "h": 59,
+      "c": 0.99123
+    },
+    {
+      "x": -0.69061,
+      "y": 0.27549,
+      "r": 0.2151,
+      "s": 0.81834,
+      "q": 0.85298,
+      "k": "keyhole",
+      "h": 95,
+      "c": 0.97486
+    },
+    {
+      "x": 0.19963,
+      "y": 0.92904,
+      "r": 0.21428,
+      "s": 0.72443,
+      "q": 0.86411,
+      "k": "keyhole",
+      "h": 154,
+      "c": 0.9885
+    },
+    {
+      "x": -0.76011,
+      "y": -0.9186,
+      "r": 0.21694,
+      "s": 0.85446,
+      "q": 0.85754,
+      "k": "keyhole",
+      "h": 44,
+      "c": 0.95044
+    },
+    {
+      "x": 0.87122,
+      "y": -0.14365,
+      "r": 0.22141,
+      "s": 0.92476,
+      "q": 0.92122,
+      "k": "keyhole",
+      "h": 22,
+      "c": 0.99622
+    }
+  ],
+  "seedlets": [
+    {
+      "id": "seedlet-pk4gk0",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-t3rtm0",
+      "q": 1.90055,
+      "c": 0.99835,
+      "res": 0.13918,
+      "prod": 0,
+      "e": 0.22534,
+      "tdRaw": 1078.02549,
+      "td": 64,
+      "bleed": {
+        "ph": 5.92408,
+        "gx": -0.3509,
+        "gy": -0.49455,
+        "p": 0.16022
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-96dzdv",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-12c47ys",
+      "q": 1.7591,
+      "c": 0.9394,
+      "res": 0.79152,
+      "prod": 0.10716,
+      "e": 0.13063,
+      "tdRaw": 1168.60919,
+      "td": 64,
+      "bleed": {
+        "ph": 4.72915,
+        "gx": -0.86244,
+        "gy": 2.36425,
+        "p": 0.39103
+      },
+      "status": "resonant"
+    },
+    {
+      "id": "seedlet-1lfc3lt",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-sck7km",
+      "q": 1.88787,
+      "c": 0.99991,
+      "res": 0.43941,
+      "prod": 0,
+      "e": 0.56037,
+      "tdRaw": 1201.80218,
+      "td": 64,
+      "bleed": {
+        "ph": 3.29375,
+        "gx": 3.46638,
+        "gy": 0.8425,
+        "p": 0.42503
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1h74pe3",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-nt6cbn",
+      "q": 1.84581,
+      "c": 0.99735,
+      "res": 0,
+      "prod": 0,
+      "e": 0.71051,
+      "tdRaw": 1193.03165,
+      "td": 64,
+      "bleed": {
+        "ph": 3.45237,
+        "gx": 4,
+        "gy": 2.30146,
+        "p": 0.40092
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-13tqvrf",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1gwabgx",
+      "q": 1.84127,
+      "c": 0.98807,
+      "res": 0,
+      "prod": 0,
+      "e": 0.78322,
+      "tdRaw": 1192.82815,
+      "td": 64,
+      "bleed": {
+        "ph": 4.14466,
+        "gx": 2.78747,
+        "gy": 2.80633,
+        "p": 0.75125
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1buxid",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1twzm9",
+      "q": 1.82188,
+      "c": 0.99718,
+      "res": 0,
+      "prod": 0,
+      "e": 0.77348,
+      "tdRaw": 1168.66647,
+      "td": 64,
+      "bleed": {
+        "ph": 4.9732,
+        "gx": -4,
+        "gy": -4,
+        "p": 0.6843
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1oro79e",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-12hnbs2",
+      "q": 1.85808,
+      "c": 0.99996,
+      "res": 0,
+      "prod": 0,
+      "e": 0.62656,
+      "tdRaw": 1191.31007,
+      "td": 64,
+      "bleed": {
+        "ph": 4.06246,
+        "gx": 1.79312,
+        "gy": 3.54649,
+        "p": 0.4618
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1rjicj",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-kbxv96",
+      "q": 1.77312,
+      "c": 0.99992,
+      "res": 0.56408,
+      "prod": 0,
+      "e": 0.14647,
+      "tdRaw": 1127.02692,
+      "td": 64,
+      "bleed": {
+        "ph": 3.83582,
+        "gx": 4,
+        "gy": -4,
+        "p": 0.12976
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-18rs1b0",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-71wl5w",
+      "q": 1.72579,
+      "c": 0.93317,
+      "res": 0.37354,
+      "prod": 0,
+      "e": 0.16768,
+      "tdRaw": 1080.20246,
+      "td": 64,
+      "bleed": {
+        "ph": 5.87388,
+        "gx": -4,
+        "gy": 4,
+        "p": 0.75034
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-16bum60",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1o9u792",
+      "q": 1.81334,
+      "c": 0.98128,
+      "res": 0,
+      "prod": 0,
+      "e": 0.81592,
+      "tdRaw": 1177.1452,
+      "td": 64,
+      "bleed": {
+        "ph": 3.6444,
+        "gx": -4,
+        "gy": 3.4285,
+        "p": 0.48442
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-8116h8",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1plapji",
+      "q": 1.75094,
+      "c": 0.94299,
+      "res": 0.44267,
+      "prod": 0,
+      "e": 0.19703,
+      "tdRaw": 1094.00526,
+      "td": 64,
+      "bleed": {
+        "ph": 5.13294,
+        "gx": -4,
+        "gy": 4,
+        "p": 0.44286
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-vsrj7h",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1jlqkuv",
+      "q": 1.87758,
+      "c": 0.9967,
+      "res": 0.40934,
+      "prod": 0,
+      "e": 0.22259,
+      "tdRaw": 1078.88201,
+      "td": 64,
+      "bleed": {
+        "ph": 5.1051,
+        "gx": -0.21458,
+        "gy": -0.09998,
+        "p": 0.09206
+      },
+      "status": "stagnant"
+    },
+    {
+      "id": "seedlet-6awnzh",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-d9qtzk",
+      "q": 1.6208,
+      "c": 0.9885,
+      "res": 0,
+      "prod": 0,
+      "e": 0.76823,
+      "tdRaw": 1171.45313,
+      "td": 64,
+      "bleed": {
+        "ph": 4.75568,
+        "gx": -4,
+        "gy": 4,
+        "p": 0.69434
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1unjqcr",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-16xc15z",
+      "q": 1.82404,
+      "c": 0.98582,
+      "res": 0.33122,
+      "prod": 0,
+      "e": 0.2268,
+      "tdRaw": 1113.67696,
+      "td": 64,
+      "bleed": {
+        "ph": 5.14154,
+        "gx": 0,
+        "gy": 0,
+        "p": 0
+      },
+      "status": "stagnant"
+    },
+    {
+      "id": "seedlet-1c4d142",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1cww8u3",
+      "q": 1.64015,
+      "c": 0.99967,
+      "res": 0,
+      "prod": 0,
+      "e": 0.25797,
+      "tdRaw": 1115.36876,
+      "td": 64,
+      "bleed": {
+        "ph": 5.3248,
+        "gx": -4,
+        "gy": 4,
+        "p": 0.05578
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-5wlunk",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1u3vy78",
+      "q": 1.80765,
+      "c": 0.99944,
+      "res": 0.31445,
+      "prod": 0,
+      "e": 0.33249,
+      "tdRaw": 1126.89324,
+      "td": 64,
+      "bleed": {
+        "ph": 4.99749,
+        "gx": -4,
+        "gy": -4,
+        "p": 0.57408
+      },
+      "status": "stagnant"
+    },
+    {
+      "id": "seedlet-gj7ddy",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1rugjge",
+      "q": 1.8219,
+      "c": 0.99561,
+      "res": 0.26268,
+      "prod": 0.01408,
+      "e": 0.36926,
+      "tdRaw": 1133.02113,
+      "td": 64,
+      "bleed": {
+        "ph": 4.56556,
+        "gx": -4,
+        "gy": -4,
+        "p": 0.36821
+      },
+      "status": "stagnant"
+    },
+    {
+      "id": "seedlet-1g8s27k",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-w4uqb7",
+      "q": 1.78306,
+      "c": 0.99781,
+      "res": 0.32525,
+      "prod": 0,
+      "e": 0.21828,
+      "tdRaw": 1119.49935,
+      "td": 64,
+      "bleed": {
+        "ph": 5.31045,
+        "gx": -0.16961,
+        "gy": 0.71867,
+        "p": 0.10149
+      },
+      "status": "stagnant"
+    },
+    {
+      "id": "seedlet-iutn8",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-cxd0am",
+      "q": 1.78477,
+      "c": 0.98754,
+      "res": 0.33823,
+      "prod": 0,
+      "e": 0.23109,
+      "tdRaw": 1109.00695,
+      "td": 64,
+      "bleed": {
+        "ph": 5.11322,
+        "gx": 4,
+        "gy": -3.34626,
+        "p": 0.0527
+      },
+      "status": "stagnant"
+    },
+    {
+      "id": "seedlet-khk4kl",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-134y3oy",
+      "q": 1.82505,
+      "c": 0.99942,
+      "res": 0.50493,
+      "prod": 0,
+      "e": 0.09239,
+      "tdRaw": 1094.36742,
+      "td": 64,
+      "bleed": {
+        "ph": 5.3262,
+        "gx": 0.43609,
+        "gy": -1.59792,
+        "p": 0.16258
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1695ni9",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-17elk29",
+      "q": 1.52275,
+      "c": 0.97872,
+      "res": 0,
+      "prod": 0,
+      "e": 0.53334,
+      "tdRaw": 1192.7314,
+      "td": 64,
+      "bleed": {
+        "ph": 3.90571,
+        "gx": 4,
+        "gy": 1.98943,
+        "p": 0.43008
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1aagfqy",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-hxove3",
+      "q": 1.53967,
+      "c": 0.99454,
+      "res": 0,
+      "prod": 0,
+      "e": 0.67914,
+      "tdRaw": 1200.25085,
+      "td": 64,
+      "bleed": {
+        "ph": 3.5198,
+        "gx": 1.69558,
+        "gy": 1.35277,
+        "p": 0.1571
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-ybv3nn",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1g74l43",
+      "q": 1.59904,
+      "c": 0.88794,
+      "res": 0,
+      "prod": 0,
+      "e": 0.28968,
+      "tdRaw": 1147.05959,
+      "td": 64,
+      "bleed": {
+        "ph": 4.01126,
+        "gx": -0.18642,
+        "gy": 0.35385,
+        "p": 0.08944
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1qvn5y9",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1ggmkpr",
+      "q": 1.57867,
+      "c": 0.84319,
+      "res": 0,
+      "prod": 0,
+      "e": 0.37129,
+      "tdRaw": 1121.86625,
+      "td": 64,
+      "bleed": {
+        "ph": 4.99394,
+        "gx": -4,
+        "gy": -4,
+        "p": 0.51776
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-kgo7mw",
+      "d": 8,
+      "r": 0.00390625,
+      "a": "anchor-18aiufq",
+      "q": 1.60792,
+      "c": 0.99882,
+      "res": 0.49743,
+      "prod": 0,
+      "e": 0.03384,
+      "tdRaw": 571.79236,
+      "td": 64,
+      "bleed": {
+        "ph": 5.02216,
+        "gx": -4,
+        "gy": -4,
+        "p": 0.3777
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1j57e7h",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-zqpr8a",
+      "q": 1.5936,
+      "c": 0.85592,
+      "res": 0.5142,
+      "prod": 0,
+      "e": 0.12915,
+      "tdRaw": 1078.85294,
+      "td": 64,
+      "bleed": {
+        "ph": 5.5831,
+        "gx": 2.21554,
+        "gy": -4,
+        "p": 0.19113
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-lzcb22",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-b8ooa6",
+      "q": 1.5518,
+      "c": 0.99659,
+      "res": 0,
+      "prod": 0,
+      "e": 0.33551,
+      "tdRaw": 1115.68003,
+      "td": 64,
+      "bleed": {
+        "ph": 4.72407,
+        "gx": -0.03731,
+        "gy": -0.22753,
+        "p": 0.03166
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-x79z4j",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1p04auh",
+      "q": 1.60183,
+      "c": 0.87298,
+      "res": 0.42544,
+      "prod": 0,
+      "e": 0.08836,
+      "tdRaw": 1080.36877,
+      "td": 64,
+      "bleed": {
+        "ph": 4.71081,
+        "gx": 4,
+        "gy": 1.58023,
+        "p": 0.22843
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-q2bsu0",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1ld16he",
+      "q": 1.59149,
+      "c": 0.83367,
+      "res": 0.42445,
+      "prod": 0,
+      "e": 0.10824,
+      "tdRaw": 1072.54246,
+      "td": 64,
+      "bleed": {
+        "ph": 5.85133,
+        "gx": 4,
+        "gy": 4,
+        "p": 0.7942
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-5ab9r4",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-nwzq20",
+      "q": 1.50783,
+      "c": 0.98817,
+      "res": 0,
+      "prod": 0,
+      "e": 0.50291,
+      "tdRaw": 1176.56386,
+      "td": 64,
+      "bleed": {
+        "ph": 4.6816,
+        "gx": -4,
+        "gy": 1.99144,
+        "p": 0.34607
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-xzt1j8",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1mbqlat",
+      "q": 1.43265,
+      "c": 0.99977,
+      "res": 0,
+      "prod": 0,
+      "e": 0.16909,
+      "tdRaw": 1054.25983,
+      "td": 64,
+      "bleed": {
+        "ph": 5.94231,
+        "gx": 4,
+        "gy": 4,
+        "p": 0.94684
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-18yxg8i",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1sqrozs",
+      "q": 1.58853,
+      "c": 0.81184,
+      "res": 0,
+      "prod": 0,
+      "e": 0.1484,
+      "tdRaw": 1081.65889,
+      "td": 64,
+      "bleed": {
+        "ph": 5.27537,
+        "gx": 4,
+        "gy": 4,
+        "p": 0.21948
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-t61k4x",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1ttzw7c",
+      "q": 1.52801,
+      "c": 0.86557,
+      "res": 0,
+      "prod": 0,
+      "e": 0.1196,
+      "tdRaw": 1057.21818,
+      "td": 64,
+      "bleed": {
+        "ph": 5.34591,
+        "gx": -4,
+        "gy": 4,
+        "p": 0.33522
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1mkfhc0",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1mch071",
+      "q": 1.42421,
+      "c": 0.99445,
+      "res": 0,
+      "prod": 0,
+      "e": 0.43655,
+      "tdRaw": 1130.45518,
+      "td": 64,
+      "bleed": {
+        "ph": 4.85428,
+        "gx": -0.08668,
+        "gy": 1.34493,
+        "p": 0.18652
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1r0pz3",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1vcgvxs",
+      "q": 1.54141,
+      "c": 0.99655,
+      "res": 0,
+      "prod": 0,
+      "e": 0.56311,
+      "tdRaw": 1143.07117,
+      "td": 64,
+      "bleed": {
+        "ph": 5.10039,
+        "gx": -0.65086,
+        "gy": -1.18975,
+        "p": 0.25915
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-3avtp",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1xq0fgh",
+      "q": 1.68431,
+      "c": 0.84995,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00539,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 5.66253,
+        "gx": -4,
+        "gy": -0.3759,
+        "p": 0.3397
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-dk09dm",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-drivhf",
+      "q": 1.64532,
+      "c": 0.94306,
+      "res": 0.37579,
+      "prod": 0,
+      "e": 0.20256,
+      "tdRaw": 1078.11184,
+      "td": 64,
+      "bleed": {
+        "ph": 4.9582,
+        "gx": 4,
+        "gy": 4,
+        "p": 0.15229
+      },
+      "status": "stagnant"
+    },
+    {
+      "id": "seedlet-c8r6y",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-l0a4v5",
+      "q": 1.58004,
+      "c": 0.95946,
+      "res": 0,
+      "prod": 0,
+      "e": 0.05296,
+      "tdRaw": 1104.23264,
+      "td": 64,
+      "bleed": {
+        "ph": 4.62456,
+        "gx": -0.28343,
+        "gy": -0.25617,
+        "p": 0.14227
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-yqiwvw",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1hfe5yu",
+      "q": 1.53167,
+      "c": 0.99913,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00618,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 5.04078,
+        "gx": -4,
+        "gy": 0.20058,
+        "p": 0.05967
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-o5pfj8",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-2dc9kj",
+      "q": 1.662,
+      "c": 0.9187,
+      "res": 0.41131,
+      "prod": 0,
+      "e": 0.19134,
+      "tdRaw": 1078.2359,
+      "td": 64,
+      "bleed": {
+        "ph": 5.35292,
+        "gx": 4,
+        "gy": -4,
+        "p": 0.21703
+      },
+      "status": "stagnant"
+    },
+    {
+      "id": "seedlet-lxa0k7",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1jxf3l8",
+      "q": 1.72134,
+      "c": 0.8077,
+      "res": 0,
+      "prod": 0,
+      "e": 0.0071,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 5.41123,
+        "gx": 0.23866,
+        "gy": 1.43501,
+        "p": 0.84672
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-ohnz4c",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-po1trg",
+      "q": 1.43812,
+      "c": 0.99832,
+      "res": 0,
+      "prod": 0,
+      "e": 0.013,
+      "tdRaw": 1103.64644,
+      "td": 64,
+      "bleed": {
+        "ph": 5.65029,
+        "gx": -3.08574,
+        "gy": -2.0629,
+        "p": 0.19256
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-tq1xyr",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1981a83",
+      "q": 1.51666,
+      "c": 0.98205,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00563,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 5.17974,
+        "gx": 0,
+        "gy": 0,
+        "p": 0
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-1bevwec",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-11lfjoe",
+      "q": 1.38585,
+      "c": 0.98306,
+      "res": 0,
+      "prod": 0,
+      "e": 0.17157,
+      "tdRaw": 1070.34364,
+      "td": 64,
+      "bleed": {
+        "ph": 5.28326,
+        "gx": -0.74008,
+        "gy": 0.16724,
+        "p": 0.10327
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-18bdlhc",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-clqyp5",
+      "q": 1.53876,
+      "c": 0.98716,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00656,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 4.26771,
+        "gx": 1.8906,
+        "gy": -0.86977,
+        "p": 0.59324
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-1kqwrnj",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-qox6m2",
+      "q": 1.68217,
+      "c": 0.84232,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00744,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 4.98993,
+        "gx": 4,
+        "gy": -4,
+        "p": 0.43629
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-16kvtik",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1hpo6gr",
+      "q": 1.79368,
+      "c": 0.99075,
+      "res": 0,
+      "prod": 0,
+      "e": 0.17174,
+      "tdRaw": 1078.7529,
+      "td": 64,
+      "bleed": {
+        "ph": 6.06175,
+        "gx": 4,
+        "gy": 0.92877,
+        "p": 0.10984
+      },
+      "status": "stagnant"
+    },
+    {
+      "id": "seedlet-1r0elqe",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1yjemfc",
+      "q": 1.57414,
+      "c": 0.9216,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00679,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 4.54407,
+        "gx": 4,
+        "gy": 4,
+        "p": 0.15176
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-8jenya",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-r16pyq",
+      "q": 1.48973,
+      "c": 0.99696,
+      "res": 0,
+      "prod": 0,
+      "e": 0.005,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 5.04247,
+        "gx": -4,
+        "gy": -4,
+        "p": 0.13584
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-rjb4sq",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-150a1ms",
+      "q": 1.61511,
+      "c": 0.88642,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00704,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 5.79091,
+        "gx": -4,
+        "gy": 2.06781,
+        "p": 0.45349
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-1b7iqg2",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-10h81fz",
+      "q": 1.52483,
+      "c": 0.95571,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00647,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 4.23436,
+        "gx": 0,
+        "gy": 0,
+        "p": 0
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-119xhzl",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-uxg2m6",
+      "q": 1.51883,
+      "c": 0.96908,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00604,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 5.23411,
+        "gx": 0.21716,
+        "gy": 0.41605,
+        "p": 0.86013
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-ull74q",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1ct95cy",
+      "q": 1.53019,
+      "c": 0.97412,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00611,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 2.79675,
+        "gx": -4,
+        "gy": -4,
+        "p": 0
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-1rvz1k0",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1rfihg7",
+      "q": 1.53849,
+      "c": 0.83536,
+      "res": 0,
+      "prod": 0,
+      "e": 0.2745,
+      "tdRaw": 1074.57633,
+      "td": 64,
+      "bleed": {
+        "ph": 5.86015,
+        "gx": 0.60547,
+        "gy": -4,
+        "p": 0.33964
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1cs3q1h",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1n07up5",
+      "q": 1.471,
+      "c": 0.9936,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00598,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 4.65105,
+        "gx": -0.20288,
+        "gy": -0.19842,
+        "p": 0.72902
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-1q8khqu",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-tjxoo0",
+      "q": 1.33496,
+      "c": 0.98442,
+      "res": 0,
+      "prod": 0,
+      "e": 0.45349,
+      "tdRaw": 1167.44226,
+      "td": 64,
+      "bleed": {
+        "ph": 5.05948,
+        "gx": -0.65218,
+        "gy": -0.99266,
+        "p": 0.36146
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1wn9c3y",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-nujarh",
+      "q": 1.44225,
+      "c": 0.9911,
+      "res": 0,
+      "prod": 0,
+      "e": 0.53878,
+      "tdRaw": 1201.80897,
+      "td": 64,
+      "bleed": {
+        "ph": 2.62335,
+        "gx": 0.21245,
+        "gy": 0.38766,
+        "p": 0.10867
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-1d0odvs",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-ny4zqh",
+      "q": 1.45052,
+      "c": 0.99236,
+      "res": 0,
+      "prod": 0,
+      "e": 0.005,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 4.73037,
+        "gx": 0,
+        "gy": 0,
+        "p": 0
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-1eryx0o",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1jo9ds0",
+      "q": 1.48951,
+      "c": 0.97611,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00618,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 4.4066,
+        "gx": -4,
+        "gy": 4,
+        "p": 0.20276
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-7i8juu",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-yhjy0y",
+      "q": 1.6077,
+      "c": 0.8599,
+      "res": 0,
+      "prod": 0,
+      "e": 0.007,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 5.23526,
+        "gx": 4,
+        "gy": 1.16693,
+        "p": 0.33721
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-1fmnxav",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-r7f43q",
+      "q": 1.59787,
+      "c": 0.85241,
+      "res": 0,
+      "prod": 0,
+      "e": 0.005,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 4.11778,
+        "gx": 0,
+        "gy": 0,
+        "p": 0
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-uudhug",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1jfi5g1",
+      "q": 1.44952,
+      "c": 0.97665,
+      "res": 0,
+      "prod": 0,
+      "e": 0.00589,
+      "tdRaw": 512,
+      "td": 64,
+      "bleed": {
+        "ph": 5.35012,
+        "gx": -4,
+        "gy": 4,
+        "p": 0.73311
+      },
+      "status": "stable"
+    },
+    {
+      "id": "seedlet-1t0ip3d",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-1o5j9j7",
+      "q": 1.3299,
+      "c": 0.99184,
+      "res": 0,
+      "prod": 0,
+      "e": 0.62164,
+      "tdRaw": 1189.36232,
+      "td": 64,
+      "bleed": {
+        "ph": 3.62708,
+        "gx": -0.35033,
+        "gy": 0.24028,
+        "p": 0.22351
+      },
+      "status": "training"
+    },
+    {
+      "id": "seedlet-65do6a",
+      "d": 9,
+      "r": 0.00195313,
+      "a": "anchor-9pnbg6",
+      "q": 1.47261,
+      "c": 0.99622,
+      "res": 0,
+      "prod": 0,
+      "e": 0.38915,
+      "tdRaw": 1167.58725,
+      "td": 64,
+      "bleed": {
+        "ph": 3.63664,
+        "gx": 4,
+        "gy": -3.22757,
+        "p": 0.15419
+      },
+      "status": "dormant"
+    }
+  ],
+  "portals": [
+    {
+      "id": "portal-115i-1yv",
+      "from": "anchor-t3rtm0",
+      "d": 8,
+      "q": 2.55112,
+      "stability": 0.89722,
+      "td": 1
+    },
+    {
+      "id": "portal-qek-1ys",
+      "from": "anchor-hpmf7e",
+      "d": 8,
+      "q": 2.54795,
+      "stability": 0.89629,
+      "td": 1
+    },
+    {
+      "id": "portal-qel-1ys",
+      "from": "anchor-hpmf7e",
+      "d": 8,
+      "q": 2.54795,
+      "stability": 0.89629,
+      "td": 1
+    },
+    {
+      "id": "portal-qer-1ys",
+      "from": "anchor-hpmf7e",
+      "d": 8,
+      "q": 2.54795,
+      "stability": 0.89629,
+      "td": 1
+    },
+    {
+      "id": "portal-qes-1ys",
+      "from": "anchor-hpmf7e",
+      "d": 8,
+      "q": 2.54795,
+      "stability": 0.89629,
+      "td": 1
+    }
+  ],
+  "gaugeAtlas": {
+    "seedlets": 192,
+    "statuses": {
+      "training": 91,
+      "resonant": 1,
+      "stagnant": 17,
+      "stable": 65,
+      "dormant": 18
+    },
+    "activeSeedletId": "seedlet-pk4gk0",
+    "criticalMean": 0.8613463020833328,
+    "resonanceMean": 0.04106833333333333,
+    "productivityMean": 0.0006314583333333334,
+    "maxDilation": 64,
+    "portals": 96,
+    "topSeedlets": [
+      {
+        "id": "seedlet-pk4gk0",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.90055,
+        "c": 0.99835,
+        "res": 0.13918,
+        "prod": 0,
+        "status": "training",
+        "td": 64
+      },
+      {
+        "id": "seedlet-96dzdv",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.7591,
+        "c": 0.9394,
+        "res": 0.79152,
+        "prod": 0.10716,
+        "status": "resonant",
+        "td": 64
+      },
+      {
+        "id": "seedlet-1lfc3lt",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.88787,
+        "c": 0.99991,
+        "res": 0.43941,
+        "prod": 0,
+        "status": "training",
+        "td": 64
+      },
+      {
+        "id": "seedlet-1h74pe3",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.84581,
+        "c": 0.99735,
+        "res": 0,
+        "prod": 0,
+        "status": "training",
+        "td": 64
+      },
+      {
+        "id": "seedlet-13tqvrf",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.84127,
+        "c": 0.98807,
+        "res": 0,
+        "prod": 0,
+        "status": "training",
+        "td": 64
+      },
+      {
+        "id": "seedlet-1buxid",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.82188,
+        "c": 0.99718,
+        "res": 0,
+        "prod": 0,
+        "status": "training",
+        "td": 64
+      },
+      {
+        "id": "seedlet-1oro79e",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.85808,
+        "c": 0.99996,
+        "res": 0,
+        "prod": 0,
+        "status": "training",
+        "td": 64
+      },
+      {
+        "id": "seedlet-1rjicj",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.77312,
+        "c": 0.99992,
+        "res": 0.56408,
+        "prod": 0,
+        "status": "training",
+        "td": 64
+      },
+      {
+        "id": "seedlet-18rs1b0",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.72579,
+        "c": 0.93317,
+        "res": 0.37354,
+        "prod": 0,
+        "status": "training",
+        "td": 64
+      },
+      {
+        "id": "seedlet-16bum60",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.81334,
+        "c": 0.98128,
+        "res": 0,
+        "prod": 0,
+        "status": "training",
+        "td": 64
+      },
+      {
+        "id": "seedlet-8116h8",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.75094,
+        "c": 0.94299,
+        "res": 0.44267,
+        "prod": 0,
+        "status": "training",
+        "td": 64
+      },
+      {
+        "id": "seedlet-vsrj7h",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.87758,
+        "c": 0.9967,
+        "res": 0.40934,
+        "prod": 0,
+        "status": "stagnant",
+        "td": 64
+      },
+      {
+        "id": "seedlet-6awnzh",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.6208,
+        "c": 0.9885,
+        "res": 0,
+        "prod": 0,
+        "status": "training",
+        "td": 64
+      },
+      {
+        "id": "seedlet-1unjqcr",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.82404,
+        "c": 0.98582,
+        "res": 0.33122,
+        "prod": 0,
+        "status": "stagnant",
+        "td": 64
+      },
+      {
+        "id": "seedlet-1c4d142",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.64015,
+        "c": 0.99967,
+        "res": 0,
+        "prod": 0,
+        "status": "training",
+        "td": 64
+      },
+      {
+        "id": "seedlet-5wlunk",
+        "d": 9,
+        "r": 0.00195313,
+        "q": 1.80765,
+        "c": 0.99944,
+        "res": 0.31445,
+        "prod": 0,
+        "status": "stagnant",
+        "td": 64
+      }
+    ]
+  },
+  "packetMix": {
+    "parentAnchors": 10,
+    "seedlets": 64,
+    "portals": 5,
+    "intent": "40/40/20 parent-child-portal memory blend"
+  }
+}

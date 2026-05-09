@@ -1,0 +1,88 @@
+{
+  "version": "omegaseed-0.1.0",
+  "id": "omegaseed-1d212eu",
+  "seed": "omegaseed-bootstrap",
+  "time": 0,
+  "epoch": 3,
+  "cycle": 0,
+  "params": {
+    "scale": 1.72,
+    "flow": 0.76,
+    "foldDepth": 5,
+    "warpStrength": 0.58,
+    "threshold": 0.54,
+    "edgeSoftness": 0.18,
+    "filamentMix": 0.62,
+    "gravity": 0.85,
+    "swirl": 0.48,
+    "viscosity": 0.89,
+    "atlasInfluence": 0.34,
+    "atlasRadius": 0.2,
+    "particleCount": 3600,
+    "fieldWidth": 188,
+    "fieldHeight": 112,
+    "exposure": 1,
+    "learningRate": 0.22,
+    "maxAnchors": 128,
+    "maxAtlasInfluence": 48,
+    "minAnchorScore": 0.66
+  },
+  "stats": {
+    "coherence": 0,
+    "filament": 0,
+    "cavity": 0,
+    "atlasFitness": 0,
+    "anchors": 3,
+    "packets": 0,
+    "lastLearned": null
+  },
+  "atlas": {
+    "anchors": [
+      {
+        "id": "boot-a",
+        "x": -0.34,
+        "y": -0.08,
+        "radius": 0.18,
+        "strength": 0.44,
+        "score": 0.72,
+        "phase": 0.7,
+        "hits": 4,
+        "born": 0,
+        "lastSeen": 3,
+        "kind": "basin"
+      },
+      {
+        "id": "boot-b",
+        "x": 0.12,
+        "y": 0.24,
+        "radius": 0.22,
+        "strength": 0.39,
+        "score": 0.69,
+        "phase": 2.1,
+        "hits": 3,
+        "born": 1,
+        "lastSeen": 3,
+        "kind": "filament"
+      },
+      {
+        "id": "boot-c",
+        "x": 0.47,
+        "y": -0.31,
+        "radius": 0.16,
+        "strength": 0.33,
+        "score": 0.64,
+        "phase": 4.8,
+        "hits": 2,
+        "born": 1,
+        "lastSeen": 2,
+        "kind": "basin"
+      }
+    ],
+    "packets": [],
+    "ancestry": [],
+    "notes": [
+      "OmegaSeed begins as a continuous effective field: nested simplex topographies, smoothstep thresholds, and atlas-biased folding.",
+      "Bootstrap anchors are deliberately weak; they prove save/import carry-over without freezing emergence."
+    ]
+  }
+}
